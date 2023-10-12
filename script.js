@@ -1,5 +1,5 @@
 var startGame = document.querySelector('#select')
-
+var selectedCharacter;
 
 
 
@@ -23,7 +23,10 @@ const character2 = new characters('JazzLord', 100, 'sound waves', 'a small figth
 const character3 = new characters('Sweet', 100, 'elusive', 'skinny but quick, sweet is hard for an oppent to hit in combat');
 const character4 = new characters('Big Toe', 100, 'God Tier', 'Big Toe is litterally a Big Toe, allow him to get one hit and its an automatic win');
 
-
+function selectCharacter() {
+    selectedCharacter = character;
+    console.log('Selected character:', selectedCharacter);
+}
 
 startGame.addEventListener('click', function (event) {
     event.preventDefault()
