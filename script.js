@@ -1,4 +1,4 @@
-var startGame = document.querySelector('#select')
+var startGame = document.querySelector('#start-btn')
 var selectedCharacter;
 
 
@@ -24,14 +24,34 @@ const character3 = new characters('Sweet', 100, 'elusive', 'skinny but quick, sw
 const character4 = new characters('Big Toe', 100, 'God Tier', 'Big Toe is litterally a Big Toe, allow him to get one hit and its an automatic win');
 
 function selectCharacter() {
-    selectedCharacter = character;
+    selectedCharacter = character2;
     console.log('Selected character:', selectedCharacter);
 }
 
 startGame.addEventListener('click', function (event) {
     event.preventDefault()
-
-    selectCharacters();
+    if (!selectedCharacter) {
+        alert('Please select a Character before satrting the game')
+        return;
+    }
+function chooseCharacter() {
+    let characterDiv = document.getElementById('character-selection')
+    let characters = [character1, character2, character3, character4];
+    characters.forEach(function (character) {
+        let characterSelectionEl = document.createElement('div');
+        characterSelectionEl.className = 'character';
+        characterSelectionEl.innerHTML = `
+        <h2>${character.name}</h2>
+        <p>${character.classBuild}</p>
+    `;
+    characterSelectionEl.addEventListener('click', function(){
+        selectCharacter(character);
+    })
+    characterDiv.appendchild(characterSelectionEl)
+    })
+}
+    chooseCharacter()
+    
 })
 
 
