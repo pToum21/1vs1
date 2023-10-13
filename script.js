@@ -47,7 +47,7 @@ function chooseCharacter() {
     characterSelectionEl.addEventListener('click', function(){
         selectCharacter(character);
     })
-    characterDiv.appendchild(characterSelectionEl)
+    characterSelectionEl.appendchild(characterDiv)
     })
 }
     chooseCharacter()
