@@ -1,0 +1,15 @@
+{
+  "name": "1vs1",
+  "version": "1.0.0",
+  "description": "one vs one",
+  "main": "script.js",
+  "scripts": {
+   "start": "node script"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
