@@ -37,7 +37,7 @@ function Game() {
                 const you = new Character(
                     answers.name,
                     Math.ceil(Math.random() * 100),
-                    Math.ceil(Math.random() * 60),
+                    Math.ceil(Math.random() * 40),
                     answers.classBuild,
                     answers.bio
                 );
@@ -45,7 +45,7 @@ function Game() {
                 const computer = new Character(
                     "Enemy",
                     Math.ceil(Math.random() * 100),
-                    Math.ceil(Math.random() * 60),
+                    Math.ceil(Math.random() * 50),
                     "Enemy Class",
                     "From the depths of hell"
                 );
