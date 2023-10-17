@@ -4,13 +4,13 @@ const inquirer = require('inquirer')
 var selectedCharacter;
 
 function Game() {
-    // implement these functions
     this.turn = 0;
     this.selectedCharacters = [];
 
     this.start = function () { };
     this.quit = function () { };
     this.printStats = function () { };
+    // function that builds characters based on the user entry and the creates a bot charcter that the computer controls as well
     this.createCharacter = function () {
         inquirer
             .prompt([
@@ -62,6 +62,7 @@ function Game() {
     }
 }
 
+// function that allows you to build charcters
 function Character(name, health, attack, classBuild, bio) {
 
     this.name = name;
