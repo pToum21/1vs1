@@ -86,8 +86,3 @@ function Character(name, health, attack, classBuild, bio) {
 const game = new Game();
 game.createCharacter();
 
-// console.log(game.selectedCharacters);
-
-// npm init -y
-
-// npm install inquirer@8.2.4
