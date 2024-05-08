@@ -1,4 +1,5 @@
 const inquirer = require('inquirer')
+const iWantTheBadge = 'gimmegimme';
 
 // var startGame = document.querySelector('#start-btn')
 var selectedCharacter;
